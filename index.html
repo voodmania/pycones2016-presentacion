@@ -229,9 +229,9 @@ def process_callback(msg):
       kb = get_days_keyboard()
       bot.sendMessage(chat_id, DAYS_MSG, reply_markup=kb)
   elif data[0] == 'schedules':
-      process_schedules(data[1])
+      process_schedules(chat_id, data[1])
   elif data[0] == 'slots':
-      process_slots(data[1], data[2])
+      process_slots(chat_id, data[1], data[2])
           </code></pre>
         </section>
 
